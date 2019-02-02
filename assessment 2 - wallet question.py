@@ -10,13 +10,13 @@
 # you must run the following tests on your wallet
 
 my_wallet = Wallet(25)
-my_wallet.give(10)
-my_wallet.take(5)
-my_wallet.give(20)
+my_wallet.take(10)
+my_wallet.give(5)
+my_wallet.take(20)
 print(my_wallet.print_amount()) # answer should be 50
 
 your_wallet = Wallet()
-your_wallet.give(25)
-your_wallet.give(100) # this should fail with a message
-your_wallet.take(30)  # this should fail with a message
+your_wallet.take(25)
+your_wallet.take(100) # this should fail with a message
+your_wallet.give(30)  # this should fail with a message
 print(your_wallet.print_amount()) # answer should be 25
